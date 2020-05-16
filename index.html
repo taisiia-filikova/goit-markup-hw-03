@@ -17,43 +17,49 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <a href="./index.html" class="logo">Web <span>Studio</span></a>
+      <div class="container header">
+        <nav class="navigation">
+          <a href="./index.html" class="logo">Web <span>Studio</span></a>
 
-        <ul class="nav">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <ul class="nav site-nav">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="nav header-contacts">
+          <li class="item">
+            <a href="mailto:info@devstudio.com " class="contacts">
+              <img src="./img/cover_icon.svg" alt="Cover" />
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contacts">
+              <img src="./img/phone_icon.svg" alt="Phone" />
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-
-      <ul class="nav">
-        <li>
-          <a href="mailto:info@devstudio.com " class="contacts">
-            <img src="./img/cover_icon.svg" alt="Cover" />
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts">
-            <img src="./img/phone_icon.svg" alt="Phone" />
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- Hero -->
-      <section>
-        <h1 class="hero">эффективные решения для вашего бизнеса</h1>
+      <section class="hero">
+        <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
         <a href="" class="button">Заказать услугу</a>
       </section>
 
       <!--Advantages-->
-      <section class="section">
-        <h2 class="section-title">Примеры работ</h2>
-        <ul>
-          <li>
+      <section class="section container">
+        <h2 class="section-title advant-title">Преимущества</h2>
+        <ul class="advantages">
+          <li class="item">
             <img src="./img/antenna.svg" alt="Antenna" width="278" />
             <h3 class="title">Внимание к деталям</h3>
             <p class="title-text">
@@ -61,7 +67,7 @@
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/clock.svg" alt="Clock" width="278" />
             <h3>Пунктуальность</h3>
             <p class="title-text">
@@ -69,7 +75,7 @@
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/computer.svg" alt="Computer" width="278" />
             <h3 class="title">Планирование</h3>
             <p class="title-text">
@@ -77,7 +83,7 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/cosmonaut.svg" alt="Cosmonaut" width="278" />
             <h3 class="title">Современные технологии</h3>
             <p class="title-text">
@@ -89,20 +95,20 @@
       </section>
 
       <!-- Activity -->
-      <section class="section">
+      <section class="section container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+        <ul class="activity">
+          <li class="item">
             <a href=""
               ><img src="./img/laptop.jpg" alt="Laptop" width="380"
             /></a>
             <h3 class="activity-title">Десктопные приложения</h3>
           </li>
-          <li>
+          <li class="item">
             <a href=""><img src="./img/phone.jpg" alt="Phone" width="380" /></a>
             <h3 class="activity-title">Мобильные приложения</h3>
           </li>
-          <li>
+          <li class="item">
             <a href=""
               ><img src="./img/screen.jpg" alt="Screen" width="380"
             /></a>
@@ -113,10 +119,10 @@
 
       <!-- Team -->
 
-      <section class="section" lang="en">
+      <section class="section container" lang="en">
         <h2 class="section-title">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="team">
+          <li class="item">
             <img src="./img/john.jpg" alt="John" width="278" />
             <h3 class="name">John Smith</h3>
             <p class="profession">Product Designer</p>
@@ -143,7 +149,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/marta.jpg" alt="Marta" width="278" />
             <h3 class="name">Marta Stewart</h3>
             <p class="profession">Frontend Developer</p>
@@ -170,7 +176,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/robert.jpg" alt="Robert" width="278" />
             <h3 class="name">Robert Jakis</h3>
             <p class="profession">Marketing</p>
@@ -197,7 +203,7 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/martin.jpg" alt="Martin" width="278" />
             <h3 class="name">Martin Doe</h3>
             <p class="profession">UI Designerr</p>
@@ -228,25 +234,25 @@
       </section>
 
       <!-- Customers -->
-      <section class="section">
+      <section class="section container">
         <h2 class="section-title">Постоянные клиенты</h2>
-        <ul>
-          <li>
+        <ul class="customers">
+          <li class="item">
             <a href=""> <img src="./img/company1.svg" alt="Company1" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""> <img src="./img/company2.svg" alt="Company2" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""> <img src="./img/company3.svg" alt="Company3" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""> <img src="./img/company4.svg" alt="Company4" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""> <img src="./img/company5.svg" alt="Company5" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href=""> <img src="./img/company6.svg" alt="Company6" /></a>
           </li>
         </ul>
