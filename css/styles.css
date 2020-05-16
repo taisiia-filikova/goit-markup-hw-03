@@ -176,10 +176,11 @@ Header */
 .advantages {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
-.advantages .item .img {
+.advantages .item img {
   display: block;
   border-radius: 4px;
   min-width: 278px;
@@ -214,6 +215,8 @@ Header */
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -233,9 +236,21 @@ Header */
 .activity {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
+.activity .item + .item {
+  margin-left: 30px;
+}
+.activity .item img {
+  display: block;
+  border-radius: 4px;
+  min-width: 380px;
+}
+
 .activity-title {
+  margin: 0;
+
   color: var(--primary-white-color);
   /* временно, чтоб не терялся белый цвет шрифта */
   background-color: var(--paragraph-colour);
@@ -248,10 +263,29 @@ Header */
 }
 /* Team */
 
+.team-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding: 94px 199px;
+  outline: 2px solid blue;
+}
+
+.team .item + .item {
+  margin-left: 30px;
+}
+
 .team {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name {
