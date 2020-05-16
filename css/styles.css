@@ -17,7 +17,7 @@ body {
 
 li {
   list-style: none;
-}
+ }
 
 a {
   text-decoration: none;
@@ -30,6 +30,21 @@ p {
 footer {
   background-color: var(--footer-bgc);
 }
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid green; */
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+}
+
 /* Logo */
 .logo {
   color: var(--accent-color);
@@ -46,6 +61,10 @@ footer {
 /* Navigation */
 
 .nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -65,6 +84,10 @@ footer {
 
 /* Tel & E-mail */
 .contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--paragraph-colour);
 
   font-weight: 500;
@@ -77,9 +100,59 @@ footer {
   color: var(--accent-color);
 }
 
-/* Hero */
+/* Header */
+/* header {
+  background-color: salmon; */
+}
+.header {
+  display: flex;
+  
+}
 
+/* Navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+/* Site-nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+
+.site-nav .item {
+  /* outline: 2px solid purple; */
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* Header-contacts */
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contacts .item {
+  /* outline: 2px solid rebeccapurple; */
+}
+
+.header-contacts .item + .item {
+  margin-left: 30px;
+}
+
+/* Hero */
 .hero {
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 46;
+
   color: var(--primary-white-color);
   /* временно, чтоб не терялся белый цвет шрифта */
   background-color: var(--paragraph-colour);
@@ -87,7 +160,6 @@ footer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -95,37 +167,61 @@ footer {
 /* Button */
 
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
 }
 /* Advantages */
 
-.section-title {
+ #F5F4FA -  фон преимуществ
+var(--accent-color) - при ховере
+
+.advantages{
+display: flex;
+padding: 0;
+margin: 0;
+}
+
+.advant-title{
+display: none;
+}
+
+.section-title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-.title {
+.title{
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.title-text {
+.title-text{
   font-size: 14px;
   line-height: 1.71;
 }
 
 /* Activity */
+
+.activity{
+  display: flex;
+  padding: 0;
+margin: 0;
+}
 .activity-title {
   color: var(--primary-white-color);
   /* временно, чтоб не терялся белый цвет шрифта */
@@ -139,6 +235,12 @@ footer {
 }
 /* Team */
 
+.team{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
 .name {
   font-weight: 500;
   font-size: 16px;
@@ -148,6 +250,13 @@ footer {
 
 .name > .profession {
   font-weight: 400;
+}
+
+/* Customers */
+.customers{
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 /* Footer */
