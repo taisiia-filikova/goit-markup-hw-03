@@ -59,7 +59,7 @@ Header */
   margin: 0;
   padding: 0;
   margin-left: auto;
-  align-items: center;
+  align-items: baseline;
 }
 
 .header-contacts .item + .item {
@@ -136,7 +136,6 @@ Header */
 .hero {
   text-align: center;
   margin-bottom: 94px;
-  /* outline: 2px solid green; */
 }
 
 .hero-title {
@@ -180,20 +179,30 @@ Header */
   margin-bottom: 94px;
 }
 
-.advantages .item img {
-  display: block;
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f4fa;
   border-radius: 4px;
   min-width: 278px;
   min-height: 120px;
   margin-bottom: 30px;
-
-  background: #f5f4fa;
 }
 
-.advantages .item .img:hover,
-.advantages .item .img:focus {
+.background:hover,
+.background:focus {
   background-color: var(--accent-color);
 }
+
+.advantages .item img {
+  display: block;
+  min-width: 70px;
+  min-height: 70px;
+  margin: 25px 104px;
+}
+
 .advantages .item .title {
   margin: 0;
   margin-bottom: 10px;
@@ -272,7 +281,7 @@ Header */
 
   background-color: #f5f4fa;
 
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 
 .team .item + .item {
@@ -336,7 +345,8 @@ Header */
   margin-right: auto;
   width: 207px;
   height: 44px;
-  outline: 2px solid salmon;
+
+  /* outline: 2px solid salmon; */
 }
 
 .social-network > .item img {
@@ -354,8 +364,8 @@ Header */
 .customers {
   display: flex;
   padding: 0;
-  padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 .customers .item + .item {
@@ -363,24 +373,37 @@ Header */
 }
 
 .customers .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid #afb1b8;
-  padding: 0;
   border-radius: 4px;
   min-width: 175px;
   min-height: 90px;
 }
 
-.customers .item img {
-  display: block;
-  margin: auto;
+/* Footer */
+
+.footer a {
+  display: inline-block;
 }
 
-/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 18px;
+}
 .footer-contacts {
   background-color: var(--footer-bgc);
   color: var(--footer-text-color);
 }
 
+.footer-contacts > a {
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
 /* Logo */
 .logo-footer {
   color: var(--accent-color);
@@ -397,6 +420,7 @@ Header */
 
 /* Address box*/
 .footer-contacts .address {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
   /* я не понимаю, почему оно не автоматическое и даже из body (я пробовала) font-style, а упорно рисует мне адрес italic*/
   font-style: normal;
@@ -409,9 +433,35 @@ Header */
   font-style: normal;
   color: var(--footer-text-color);
 }
+.footer-contacts .mail {
+  margin-bottom: 9px;
+}
 
+.footer-contacts .tel {
+  margin-bottom: 28px;
+}
 /* Social Networks box */
+
+.follow-us {
+  margin-left: 179px;
+}
+
+.social-networks {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  /* Пока тут не иконки я чисто визуально тыкнула нижний маржин, иначе съезжает */
+  margin-bottom: 34px;
+}
+
+.social-networks .item + .item {
+  margin-left: 10px;
+}
+
 .footer-title {
+  margin-top: 56px;
+  margin-bottom: 21px;
+
   color: var(--primary-white-color);
 
   font-weight: 700;
@@ -420,6 +470,11 @@ Header */
   text-transform: uppercase;
 }
 /* Form &Button */
+
+.form {
+  margin-left: auto;
+}
+
 .e-mail {
   color: var(--footer-text-color);
 
@@ -427,8 +482,18 @@ Header */
   font-size: 16px;
   line-height: 1.87;
 }
+/* .footer input {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px; */
 
 .button-footer {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  margin-left: 12px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -441,6 +506,9 @@ Header */
 
 /* Copiright */
 .copiright {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 21px;
   color: rgba(255, 255, 255, 0.4);
 
   font-weight: 400;
