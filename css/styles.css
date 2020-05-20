@@ -33,14 +33,31 @@ footer {
   background-color: var(--footer-bgc);
 }
 
+section {
+  padding-bottom: 94px;
+}
+
+header {
+  border: 1px solid #ececec;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid green; */
 }
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
 /* 
 Header */
 
@@ -136,7 +153,6 @@ Header */
 /* Hero */
 .hero {
   text-align: center;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -177,7 +193,6 @@ Header */
   display: flex;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 94px;
 }
 
 .background {
@@ -187,7 +202,7 @@ Header */
 
   background: #f5f4fa;
   border-radius: 4px;
-  min-width: 278px;
+  min-width: 270px;
   min-height: 120px;
   margin-bottom: 30px;
 }
@@ -201,7 +216,7 @@ Header */
   display: block;
   min-width: 70px;
   min-height: 70px;
-  margin: 25px 104px;
+  margin: 25px 100px;
 }
 
 .advantages .item .title {
@@ -216,10 +231,6 @@ Header */
 .advantages .item + .item {
   margin-left: 30px;
 }
-.advant-title {
-  display: none;
-}
-
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -246,8 +257,7 @@ Header */
 .activity {
   display: flex;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 94px;
+  margin: 0;
 }
 .activity .item + .item {
   margin-left: 30px;
@@ -255,11 +265,12 @@ Header */
 .activity .item img {
   display: block;
   border-radius: 4px;
-  min-width: 380px;
+  min-width: 370px;
 }
 
 .activity-title {
   margin: 0;
+  padding: 27px 0;
 
   color: var(--primary-white-color);
   /* временно, чтоб не терялся белый цвет шрифта */
@@ -274,22 +285,27 @@ Header */
 /* Team */
 
 .team-container {
+  background-color: #f5f4fa;
+
+  /* outline: 2px solid salmon; */
+}
+
+.team {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
-  width: 1600px;
-  padding: 94px 199px;
-
-  background-color: #f5f4fa;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
 
   /* outline: 2px solid blue; */
 }
 
-.team .item + .item {
+.people .item + .item {
   margin-left: 30px;
 }
 
-.team {
+.people {
   display: flex;
   padding: 0;
   margin-top: 0;
@@ -300,8 +316,7 @@ Header */
   display: block;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  min-width: 278px;
-  min-height: 260px;
+  min-width: 270px;
 }
 
 .about-person {
@@ -362,11 +377,15 @@ Header */
 }
 
 /* Customers */
+
+.section:last-child {
+  padding-top: 94px;
+}
+
 .customers {
   display: flex;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 94px;
+  margin: 0;
 }
 
 .customers .item + .item {
@@ -380,7 +399,7 @@ Header */
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  min-width: 175px;
+  min-width: 170px;
   min-height: 90px;
 }
 
@@ -392,17 +411,18 @@ Header */
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  padding-top: 48px;
+  padding-bottom: 28px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 18px;
 }
+
 .footer-contacts {
   background-color: var(--footer-bgc);
   color: var(--footer-text-color);
 }
 
 .footer-contacts > a {
-  margin-top: 48px;
   margin-bottom: 10px;
 }
 /* Logo */
@@ -438,9 +458,6 @@ Header */
   margin-bottom: 9px;
 }
 
-.footer-contacts .tel {
-  margin-bottom: 28px;
-}
 /* Social Networks box */
 
 .follow-us {
@@ -460,7 +477,6 @@ Header */
 }
 
 .footer-title {
-  margin-top: 56px;
   margin-bottom: 21px;
 
   color: var(--primary-white-color);
@@ -509,6 +525,7 @@ Header */
 .copiright {
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 18px;
   padding-bottom: 21px;
   color: rgba(255, 255, 255, 0.4);
 
@@ -529,7 +546,8 @@ Header */
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 93px;
+  margin-top: 0;
+  padding-top: 93px;
   margin-bottom: 50px;
 }
 .filter button {
@@ -569,7 +587,7 @@ Header */
 
 .works .item:not(:nth-child(3n)) {
   margin-right: 30px;
-  min-width: 380px;
+  min-width: 370px;
 }
 
 .works .item:not(:nth-last-child(-n + 3)) {
@@ -583,15 +601,16 @@ Header */
 }
 
 .about-work {
-  width: 380px;
+  width: 370px;
   padding: 20px 24px;
-  background-color: var(--primary-white-color);
+
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
 
-.works-title {
-  display: none;
+  background-color: var(--primary-white-color);
 }
 
 .project {
@@ -615,4 +634,8 @@ Header */
 
   font-size: 18px;
   line-height: 1.56;
+}
+
+.invisible-title {
+  display: none;
 }
