@@ -49,7 +49,7 @@ header {
   /* outline: 2px solid green; */
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,9 +57,10 @@ header {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  overflow: hidden; */
-/* 
-Header */
+  overflow: hidden;
+}
+
+/* Header */
 
 .header {
   display: flex;
@@ -634,8 +635,4 @@ Header */
 
   font-size: 18px;
   line-height: 1.56;
-}
-
-.invisible-title {
-  display: none;
 }
